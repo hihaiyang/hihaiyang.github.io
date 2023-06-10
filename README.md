@@ -84,6 +84,7 @@ __又粗又斜__
 ```
 普通图片
 ![alt图片文字](https://img-blog.csdnimg.cn/img_convert/048633409207f962f994fe57ae7ed812.png "title=文字说明")
+
 带链接的图片
 [![图片例子](https://www.baidu.com/img/PCgkdoodle_293edff43c2957071d2f6bfa606993ac.gif "图片说明文字")](http://www.baidu.com/ "链接说明文字")
 ```
@@ -99,9 +100,12 @@ __又粗又斜__
 <br>
 
 # 代码块生成
+```
+普通代码块:
+\```或
+<pre><code>code</pre></code>
+```
 `this is code`
-
-普通代码块:```|\<pre><code>
 
     class Demo {
         def say() {
@@ -128,7 +132,12 @@ def say():
     print('hello')
 ```
 
-diff高亮语法:```diff
+diff高亮语法:
+```\diff
++ var x = 200;
+- var x = 100;
+* var x = 100;
+```
 ```diff 
 var foo = 'bar';
 + var x = 200;
@@ -175,7 +184,6 @@ var foo = 'bar';
 <br>
 
 # 表格
-
 `语法: 使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行。`
 <br>
 `说明
